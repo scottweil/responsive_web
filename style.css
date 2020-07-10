@@ -178,9 +178,11 @@ button {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+.section__max_width {
   max-width: 1200px;
 }
-
 /* about */
 .about__majors {
   display: flex;
@@ -225,4 +227,57 @@ button {
 
 .career__period {
   font-size: var(--font-micro);
+}
+
+/* skill */
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillSet {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillSet__title {
+  color: white;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.skill__bar {
+  width: 95%;
+  height: 3px;
+  background-color: grey;
+  margin: auto;
+}
+
+.skill__value {
+  height: 3px;
+  background-color: red;
+}
+
+.skillSet__left {
+  flex-basis: 60%;
+  padding: 20px;
+  background-color: var(--color-dark-grey);
+}
+
+.skillSet__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
