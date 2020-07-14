@@ -79,7 +79,7 @@ h1 {
 
 h2 {
   font-weight: var(--weight-semi-bold);
-
+  font-size: var(--font-medium);
   color: var(--color-black);
   margin: 8px 0;
 }
@@ -396,4 +396,34 @@ button {
 
 .testimonial__bubble a {
   color: var(--color-dark-pink);
+}
+
+/* contact */
+#contact {
+  background-color: #0cbcc277;
+  color: var(--color-white);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__link {
+  font-size: var(--font-large);
+  margin: 20px 0;
+}
+
+.contact__link i {
+  margin: 0 10px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+.contact__link i:hover {
+  transform: scale(1.5);
+  color: var(--color-pink);
 }
