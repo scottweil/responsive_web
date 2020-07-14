@@ -239,7 +239,7 @@ button {
   display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
-  margin: 20px 0;
+  margin-top: 40px;
 }
 
 .skillSet__title {
@@ -354,4 +354,46 @@ button {
   background-color: var(--color-dark-white);
   margin: auto;
   margin-top: 10px;
+}
+
+/* testimonial */
+#testimonials {
+  background-color: var(--color-yellow);
+}
+
+.testimonial {
+  display: flex;
+  margin: 40px;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__bubble .name {
+  margin-top: 10px;
+}
+
+.testimonial__bubble a {
+  color: var(--color-dark-pink);
 }
