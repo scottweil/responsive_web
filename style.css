@@ -107,13 +107,20 @@ button {
 /* navbar */
 #navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
-  background-color: #5ce1e6d2;
+  background-color: transparent;
+  /* background-color: #5ce1e6d2; */
   color: var(--color-white);
   align-items: center;
   width: 100%;
   padding: 10px 20px;
   border-bottom: 1px solid var(--color-white);
+  z-index: 1;
+}
+
+#navbar.navbar_colored {
+  background-color: #5ce1e6ec;
 }
 
 #navbar__logo {
@@ -159,7 +166,7 @@ button {
 /* home */
 #home {
   background: url("image/background.png") center/cover no-repeat;
-  padding: 40px;
+  padding: 120px;
   text-align: center;
 }
 
