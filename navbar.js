@@ -10,6 +10,9 @@ const home__contact = document.querySelector(".home__contact");
 const home__container = document.querySelector(".home__container");
 const home_height = home.getBoundingClientRect().height;
 
+const topArrow = document.querySelector(".topArrow");
+const TOPARROW_SHOWUP = "topArrow_showup";
+
 function init() {
   // make navbar transparent and colored when scrolled
   document.addEventListener("scroll", () => {
@@ -30,6 +33,17 @@ function init() {
   document.addEventListener("scroll", () => {
     home__container.style.opacity = 1 - window.scrollY / home_height;
   });
+
+  // topArrow botton
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > home_height) {
+      topArrow.classList.add(TOPARROW_SHOWUP);
+    } else {
+      topArrow.classList.remove(TOPARROW_SHOWUP);
+    }
+  });
+
+  topArrow.addEventListener("click", scrollIntoView);
 }
 
 function scrollIntoView() {

@@ -491,3 +491,25 @@ button {
     height: 80px;
   }
 }
+
+.topArrow {
+  position: fixed;
+  text-align: center;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  color: var(--color-light-white);
+  font-size: 30px;
+  background-color: #5ce1e6ec;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.topArrow_showup {
+  opacity: 1;
+  transform: translateX(0px);
+}
