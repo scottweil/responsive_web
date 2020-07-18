@@ -44,6 +44,27 @@ function init() {
   });
 
   topArrow.addEventListener("click", scrollIntoView);
+
+  // projects filter
+  const work__categories = document.querySelector(".work__categories");
+  const work__projects = document.querySelector(".work__projects");
+  const projectAll = document.querySelectorAll(".project");
+
+  work__categories.addEventListener("click", (event) => {
+    const filter =
+      event.target.dataset.filter || event.target.parentNode.dataset.filter;
+    if (filter == null) {
+      return;
+    }
+
+    projectAll.forEach((project) => {
+      if (filter === "*" || filter === project.dataset.type) {
+        project.classList.remove("invisible");
+      } else {
+        project.classList.add("invisible");
+      }
+    });
+  });
 }
 
 function scrollIntoView() {
